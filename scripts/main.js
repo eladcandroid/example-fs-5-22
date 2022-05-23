@@ -1,4 +1,6 @@
 function showKid(kid) {
   console.log(kid);
 }
-showKid();
+for (let i = 0; i < 3; i++) {
+  showKid();
+}
