@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        color: aqua;
+      }
+      span {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body dir="rtl">
+    <a href="/index.html">דף הבית</a><br />
+    <a href="/pages/about.html">אודות</a><br />
+    <a href="/pages/contactus.html">צור קשר</a><br /><br /><br />
+    <h3>הרשמה</h3>
+
+    <form>
+      <div>
+        <label for="email">אימייל:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="הקלידו אימייל"
+        />
+      </div>
+      <div>
+        <label for="password">סיסמא:</label>
+        <input id="password" name="password" type="password" />
+      </div>
+
+      <div>
+        <label for="desc">תיאור</label>
+        <textarea
+          name="description"
+          id="desc"
+          cols="10"
+          rows="5"
+          maxlength="10"
+        >
+        </textarea>
+      </div>
+
+      <div>
+        <label for="hobbies" style="color: green">תחביבים</label>
+        <select name="hobbies" id="hobbies">
+          <option value="">בחר תחביב</option>
+          <option value="sport">ספורט</option>
+          <option value="music" value="music">מוזיקה</option>
+          <option value="dance">ריקוד</option></select
+        ><br />
+      </div>
+
+      <div>
+        <strong> אוכל מועדף </strong><span> *</span>
+        <label for="onion">בצל</label>
+        <input type="checkbox" id="onion" name="food" />
+        <label for="garlic">שום</label>
+        <input type="checkbox" id="garlic" name="food" />
+        <br />
+      </div>
+
+      <strong> טווח גילאים </strong><span> *</span>
+      <label for="young">10-15</label>
+      <input type="radio" id="young" name="age" />
+      <label for="old">16-20</label>
+      <input type="radio" id="old" name="age" />
+      <br />
+      <br />
+
+      <button disabled>כניסה למערכת המשתמשים</button>
+    </form>
+  </body>
+</html>
